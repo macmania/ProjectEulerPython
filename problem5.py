@@ -1,4 +1,10 @@
-#only the dummy example
+#Solution for problem 5 in Project Euler
+#2520 is the smallest number that can be divided by each of the 
+#numbers from 1 to 10 without any remainder.
+# What is the smallest positive number that is 
+# evenly divisible by all of the numbers from 1 to 20?
+
+
 primes = [2, 3, 5, 7, 11, 13, 17, 19] #listing out all of the primes from 1-20
 j = range(2, 20)
 a = {} #min
@@ -29,11 +35,7 @@ for x in j:
 			b[i] = 0
 N = 1
 for i in primes:
-	if a[i] < b[i]:
-		a[i] = b[i]
-		N = N * i**a[i]
-	else: 
-		N = N * i**a[i]
+	N = N * i**a[i]
 
 print b
 print a
