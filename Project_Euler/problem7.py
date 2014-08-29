@@ -5,7 +5,7 @@
 primes = []
 i = 2
 isPrime = True
-while len(primes) <= 10001 and i < 10000000:
+while len(primes) <= 10001 and i < 1000000:
 	for x in primes: 
 		if i % x == 0:
 			isPrime = False
