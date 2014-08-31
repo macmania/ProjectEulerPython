@@ -18,15 +18,13 @@ maxNum = 1
 cache = {k: 0 for k in range(2,1000000)}
 
 for x in range(2, 1000000):
-	n = int(x)
+	n = long(x)
 	
 	while(n != 1):
 		if n < len(cache) and cache[x] != 0: 
 			break
 		n = nextN(n)
 		i = i + 1
-		if maxNum < i:
-			maxNum = i
 	if i == 525: 
 		print x
 		break
