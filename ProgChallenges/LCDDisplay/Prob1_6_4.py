@@ -4,7 +4,7 @@
 def drawLCDNum(inputNum, output): 
 	#to-do stub
 	for y in display:
-
+		
 	return 0
 
 f = open("test1")
